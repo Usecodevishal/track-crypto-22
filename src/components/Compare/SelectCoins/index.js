@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { get100Coins } from "../../../functions/get100Coins";
 import MenuItem from "@mui/material/MenuItem";
 import "./styles.css";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
+import Select from "@mui/material/Select";
 function SelectCoins({ crypto1,  handleCoinChange, crypto2 }) {
   const [allCoins, setAllCoins] = useState([]);
 

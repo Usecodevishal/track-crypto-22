@@ -21,7 +21,7 @@ function LineChart({chartData,  priceType, multiAxis,}) {
                 ticks: {
                     // Include a dollar sign in the ticks
                     callback: function(value, index, ticks) {
-                        if(priceType=="price" ){
+                        if(priceType==="price" ){
                             return '$' + value.toLocalString();
                         }
                         else if(priceType=="market_caps"){
@@ -43,7 +43,7 @@ function LineChart({chartData,  priceType, multiAxis,}) {
                     callback: function(value, index, ticks) {
                         if(priceType=="price"){
                             return '$' + value.toLocalString();
-                        }else if(priceType=="market_caps"){
+                        }else if(priceType==="market_caps"){
                             return  '$' + convertNumber(value);
                         }
                         else {

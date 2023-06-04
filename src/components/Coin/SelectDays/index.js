@@ -1,9 +1,9 @@
-import { useState} from 'react';
+
 
 import './styles.css'
 import MenuItem from '@mui/material/MenuItem';
 
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
 
 export default function SelectDays({days, handleDaysChange, noPtag}) {
   

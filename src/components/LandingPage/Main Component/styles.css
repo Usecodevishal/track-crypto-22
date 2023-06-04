@@ -12,7 +12,7 @@
 }
 
 .crypto-track-heading, .real-time-heading{
-    font-size: 7rem;
+    font-size: 5rem;
     margin:0;
 }
 
@@ -64,18 +64,18 @@
     position:absolute;
     z-index:1;
     object-fit: contain;
-    max-width:350px;
+    max-width:290px;
    
     
-    padding-top:1rem;
+    
     
 }
 
 .gradient-img{
     position: absolute;
-   max-width:290px;
+   max-width:250px;
   
-   top:7rem;
+   top:2rem;
   
    
     
@@ -93,7 +93,12 @@
 
     
     .iphone-img{
+        max-width:270px;
         padding-top:2rem;
+    }
+    .gradient-img{
+        max-width:225px;
+        padding-top:3rem;
     }
   }
 
@@ -105,13 +110,13 @@
     }
 
     .iphone-img{
-        max-width:280px;
+        max-width:250px;
        
     }
 
     .gradient-img{
-        max-width:230px;
-       
+        max-width:200px;
+       padding-top:4rem;
         
     }
   }
@@ -151,7 +156,8 @@
     
     justify-content: center;
    margin-right:auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
+   
   }
 
    .iphone-img{
@@ -161,8 +167,8 @@
    
    }
    .gradient-img{
-    max-width:230px;
-    top:6rem;
+    max-width:200px;
+    top:1rem;
     padding-left:3rem;
 }
    

@@ -25,15 +25,15 @@ function List({ coin, delay, isWishlistPage }) {
       >
 
         <Tooltip title="coin logo" placement="bottom-start">
-          <td>
+          <td className="td-img ">
             <img src={coin.image} className="coin-logo" alt="" />
           </td>
         </Tooltip>
         <Tooltip title="coin symbol and name" placement="bottom-start">
           <td>
             <div className="name-col">
-              <p className="coin-symbol">{coin.symbol}</p>
-              <p className="coin-name">{coin.name}</p>
+              <p className="coin-symbol coin-symbol-list">{coin.symbol}</p>
+              <p className="coin-name coin-name-list">{coin.name}</p>
             </div>
           </td>
         </Tooltip>
@@ -97,7 +97,7 @@ function List({ coin, delay, isWishlistPage }) {
             </td>
             </Tooltip>
             <Tooltip title="check added symbol" placement="bottom">
-            <td style={{ width: "fit-content" }}>
+            <td style={{ width: "fit-content" }} className="wish-td">
             <IconButton
             onClick={(e) => {
               e.preventDefault();
@@ -112,7 +112,7 @@ function List({ coin, delay, isWishlistPage }) {
           >
             {added ? (
               <StarRoundedIcon
-                className={`wishlist-icon ${
+                className={`wishlist-icon  ${
                   coin.price_change_percentage_24h < 0 && "wishlist-icon-red"
                 }`}
               />

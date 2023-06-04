@@ -64,7 +64,7 @@
     position:absolute;
     z-index:1;
     object-fit: contain;
-    max-width:380px;
+    max-width:350px;
    
     
     padding-top:1rem;
@@ -73,7 +73,7 @@
 
 .gradient-img{
     position: absolute;
-   max-width:310px;
+   max-width:290px;
   
    top:7rem;
   

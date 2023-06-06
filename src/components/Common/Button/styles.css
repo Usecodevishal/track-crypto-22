@@ -8,7 +8,6 @@
     width: fit-content;
     cursor:pointer;
     text-align:center;
-    min-width:100px;
     text-transform: capitalize;
 }
 
@@ -22,11 +21,11 @@
     color: var(--blue);
     padding:0.5rem 1.5rem;
     border: 2px solid var(--blue);
+    width: fit-content;
     border-radius: 3rem;
     font-weight: 600;
     cursor:pointer;
     text-align:center;
-    min-width:100px;
     text-transform: capitalize;
 
 }

@@ -1,8 +1,9 @@
 import React from 'react';
 import './styles.css';
-function Button({text, outlined}) {
+function Button({text, onClick, outlined}) {
     return (
-        <div className={outlined?"outlined-btn-div":"btn-div"}>{text}</div>
+        <div className={outlined?"outlined-btn-div":"btn-div"}
+             onClick={() => onClick()}>{text}</div>
     )
 }
 

@@ -20,7 +20,7 @@
 .outlined-btn-div{
     background-color: var(--black);
     color: var(--blue);
-    padding:0.7rem 1.5rem;
+    padding:0.5rem 1.5rem;
     border: 2px solid var(--blue);
     border-radius: 3rem;
     font-weight: 600;

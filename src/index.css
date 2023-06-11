@@ -118,6 +118,13 @@ img {
     .cursor, .cursor-pointer{
       display:none;
     }
+    
+    .select-compare-coins{
+      justify-content: space-around;
+      gap:0rem !important;
+      margin: 0 !important;
+     
+    }
   }
 
 /* code {

@@ -1,6 +1,6 @@
 .grid-container{
-    width:360px;
-    height:320px;
+    width:300px;
+    height:auto;
     background-color: var(--darkgrey);
     border: 1px solid var(--darkgrey);
     border-radius:0.75rem;
@@ -27,6 +27,8 @@
 .coin-logo{
     width:3.5rem;
     height: 3.5rem;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .name-col{
@@ -38,7 +40,7 @@
 .coin-symbol{
     text-transform: uppercase;
     color:var(--white);
-    font-size:1.4rem;
+    font-size:1.2rem;
     font-weight: 600;
     margin:0;
 }
@@ -46,7 +48,7 @@
 .coin-name{
     text-transform: capitalize;
     color:var(--grey);
-    font-size:1.2rem;
+    font-size:1rem;
     font-weight: normal;
     margin:0;
 }

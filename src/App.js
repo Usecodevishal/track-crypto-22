@@ -11,6 +11,7 @@ import DashboardPage from './pages/Dashboard';
 import CoinPage from './pages/Coin';
 import ComparePage from './pages/ComparePage';
 import WishListPage from './pages/WishList';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   
@@ -52,6 +53,7 @@ function App() {
     <div className="App">
       <div className="cursor" id="cursor" />
       <div className="cursor-pointer" id="cursor-pointer" />
+      <ToastContainer />
      <BrowserRouter>
        <Routes>
         <Route path="/" element={<HomePage/>}/>

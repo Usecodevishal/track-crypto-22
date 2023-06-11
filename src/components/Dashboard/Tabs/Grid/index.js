@@ -89,7 +89,7 @@ function Grid({ coin, delay, isWishlistPage }) {
             ${coin.current_price.toLocaleString()}
           </h3>
           <p className="coin-volume">
-            Coin-Total-Volume :{coin.total_volume.toLocaleString()}
+            Total-Volume :{coin.total_volume.toLocaleString()}
           </p>
           <p className="market-cap">
             Market-Cap :{coin.market_cap.toLocaleString()}

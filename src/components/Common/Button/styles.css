@@ -1,35 +1,40 @@
-.btn{
+.btn-div{
     background-color: var(--blue);
     color: var(--white);
-    padding:0.7rem 1.5rem;
+    padding:0.5rem 1.5rem;
+    font-size:0.9rem;
+    border: 2px solid var(--blue);
     border-radius: 3rem;
     font-weight: 600;
+    width:fit-content;
     cursor:pointer;
     text-align:center;
-    min-width:100px;
+   
     text-transform: capitalize;
 }
 
-.btn:hover{
+.btn-div:hover{
     box-shadow: 5px 5px 10px rgba(58,128,233,0.5);
     transition: all 0.3s;
 }
 
-.outlined-btn{
+.outlined-btn-div{
+    width: fit-content;
     background-color: var(--black);
     color: var(--blue);
-    padding:0.7rem 1.5rem;
+    padding:0.5rem 1.5rem;
     border: 2px solid var(--blue);
     border-radius: 3rem;
     font-weight: 600;
     cursor:pointer;
     text-align:center;
-    min-width:100px;
+   
     text-transform: capitalize;
 
 }
 
-.outlined-btn:hover{
+.outlined-btn-div:hover{
     background-color: var(--blue);
     color:var(--white);
+    transition: all 0.3s;
 }

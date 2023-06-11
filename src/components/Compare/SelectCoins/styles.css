@@ -5,3 +5,20 @@
     gap: 1.5rem;
     margin: 0rem 1.5rem;
 }
+
+@media only screen and (max-width: 600px){
+
+    
+    .flex-coins p{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+    .flex-coins{
+        gap:0rem !important;
+        margin: 0rem !important;
+    }
+}

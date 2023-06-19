@@ -131,10 +131,8 @@
     background-color: var(--red);
 }
 
-.info-container{
-    margin:1.5rem;
-}
-.info-container h3{
+
+.coin-current-price{
     color:var(--green);
     font-size: 1.2rem;
     font-weight: 600;

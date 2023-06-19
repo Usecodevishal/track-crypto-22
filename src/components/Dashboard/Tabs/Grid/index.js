@@ -78,8 +78,8 @@ function Grid({ coin, delay, isWishlistPage }) {
             </div>
           </div>
         )}
-        <div className="info-container">
-          <h3
+        
+          <p
             className="coin-current-price"
             style={{
               color:
@@ -89,14 +89,14 @@ function Grid({ coin, delay, isWishlistPage }) {
             }}
           >
             ${coin.current_price.toLocaleString()}
-          </h3>
+          </p>
           <p className="coin-volume">
             Total-Volume :{coin.total_volume.toLocaleString()}
           </p>
           <p className="market-cap">
             Market-Cap :{coin.market_cap.toLocaleString()}
           </p>
-        </div>
+        
       </motion.div>
     </Link>
   );

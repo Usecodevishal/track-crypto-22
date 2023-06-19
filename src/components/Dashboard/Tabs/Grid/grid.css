@@ -24,6 +24,14 @@
     margin: 1rem 1.5rem;
 }
 
+.grid-info-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
 .coin-logo{
     width:3.5rem;
     height: 3.5rem;

@@ -51,6 +51,7 @@
         font-size: 0.6rem !important;
     border-width: 2px !important;
     padding: 0.25rem 0.5rem !important;
+          text-align:center;
       }
     .td-img img{
         width: 2rem !important;
@@ -79,10 +80,12 @@
         font-size:80% !important;
     }
     .mobile-td-mkt{
-        font-size:0.6rem;
+        
         display: block;
     }
-
+    .right-align-td{
+        font-size:0.6rem;
+    }
     .desktop-td-mkt{
         display:none;
     }

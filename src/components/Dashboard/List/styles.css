@@ -23,7 +23,9 @@
 .center-align-td{
     text-align: center;
 }
-
+.flex-chip{
+    align-items:center;
+}
 
 .right-align-td{
     text-align: right;

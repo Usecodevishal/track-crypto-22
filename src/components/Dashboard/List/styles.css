@@ -62,7 +62,9 @@
 }
 
 @media only screen and (max-width: 800px) {
-    
+    .td-img {
+    margin-right: 0.5rem;
+  }
     .list-info{
         margin-top: 1rem;
         width: 100%;

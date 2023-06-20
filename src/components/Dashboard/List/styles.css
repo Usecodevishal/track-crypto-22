@@ -48,13 +48,7 @@
     .trending-icon{
         display: none;
       }
-      .left-align-td{
-        min-width: 2rem !important;
-        font-size: 0.6rem !important;
-    border-width: 2px !important;
-    padding: 0.25rem 0.5rem !important;
-          text-align:center;
-      }
+      
     .td-img img{
         width: 2rem !important;
         height: 2rem !important;
@@ -74,6 +68,13 @@
         gap: 0rem !important;
         padding: 0rem;
     }
+    .left-align-td{
+        min-width: 2rem !important;
+        font-size: 0.6rem !important;
+    border-width: 2px !important;
+    
+          text-align:center;
+      }
     .center-align-td{
         font-size: 0.8rem !important;
         margin-right: 0.5rem;

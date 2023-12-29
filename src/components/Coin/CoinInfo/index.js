@@ -1,15 +1,36 @@
 import React, { useState } from "react";
 import "./styles.css";
-function CoinInfo({ heading, desc }) {
-  const shortDesc =
-    desc.slice(0, 350) + "<p style='color:var(--grey)'> Read More...</P>";
-  const longDesc = desc + "<p style='color:var(--grey)'> Read Less</p>";
+function CoinInfo({ heading, desc, descInKo }) {
+  const [inEng, setInEng] = useState(false);
+  let shortDesc;
+  let longDesc;
+
+  if(inEng){
+   shortDesc = desc.slice(0, 350) + "<p style='color:var(--grey)'> Read More...</P>";
+  longDesc = desc + "<p style='color:var(--grey)'> Read Less</p>";
+  }else{
+   shortDesc = descInKo.slice(0, 350) + "<p style='color:var(--grey)'> Read More...</P>";
+ longDesc = descInKo + "<p style='color:var(--grey)'> Read Less</p>";
+  }
+  
 
   const [flag, setFlag] = useState(false);
+  
+
+  const handleLanguage = () => {
+    setInEng(!inEng);
+  }
 
   return (
     <div className="grey-wrapper">
-      <h1 className="coin-info-heading">{heading}</h1>
+      <div onClick={handleLanguage}>
+        {inEng ? (
+          <h1 className="coin-info-heading">{heading}/(Eng) </h1>
+        ) : (
+          <h1 className="coin-info-heading">{heading}/(Korea) </h1>
+        )}
+      </div>
+
       {desc.length > 350 ? (
         <p
           onClick={() => setFlag(!flag)}

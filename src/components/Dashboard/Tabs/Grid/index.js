@@ -25,11 +25,13 @@ function Grid({ coin, delay, isWishlistPage }) {
         style={{ display: isWishlistPage && !added && "none" }}
       >
         <div className="grid-info">
+          <div className="grid-info-flex">
           <img src={coin.image} className="coin-logo" alt="" />
           <div className="name-col">
             <p className="coin-symbol">{coin.symbol}</p>
             <p className="coin-name">{coin.name}</p>
           </div>
+         </div>
           <IconButton
             onClick={(e) => {
               e.preventDefault();
@@ -76,8 +78,8 @@ function Grid({ coin, delay, isWishlistPage }) {
             </div>
           </div>
         )}
-        <div className="info-container">
-          <h3
+        
+          <p
             className="coin-current-price"
             style={{
               color:
@@ -87,14 +89,14 @@ function Grid({ coin, delay, isWishlistPage }) {
             }}
           >
             ${coin.current_price.toLocaleString()}
-          </h3>
+          </p>
           <p className="coin-volume">
             Total-Volume :{coin.total_volume.toLocaleString()}
           </p>
           <p className="market-cap">
             Market-Cap :{coin.market_cap.toLocaleString()}
           </p>
-        </div>
+        
       </motion.div>
     </Link>
   );

@@ -91,7 +91,7 @@ function CoinPage() {
               multiAxis={false}
             />
           </div>
-          <CoinInfo heading={coinData.name} desc={coinData.desc} />
+          <CoinInfo heading={coinData.name} desc={coinData.desc} descInKo = {coinData.descInKo} />
           <Footer />
         </>
       )}

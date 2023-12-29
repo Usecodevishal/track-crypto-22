@@ -1,3 +1,8 @@
 .coin-info-desc a{
     color:var(--blue);
 }
+
+.coin-info-heading > span{
+    
+    opacity:0.8;
+}

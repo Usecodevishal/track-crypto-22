@@ -1,6 +1,7 @@
 .grid-container{
-    width:300px;
+    width:280px;
     height:auto;
+    padding: 2rem;
     background-color: var(--darkgrey);
     border: 1px solid var(--darkgrey);
     border-radius:0.75rem;
@@ -18,10 +19,18 @@
 
 .grid-info{
     display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:1rem;
+    
+}
+
+.grid-info-flex{
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap:1rem;
-    margin: 1rem 1.5rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .coin-logo{
@@ -34,7 +43,7 @@
 .name-col{
     display: flex;
     flex-direction: column;
-    gap:0.5rem;
+    gap:0.25rem;
 }
 
 .coin-symbol{
@@ -49,7 +58,7 @@
     text-transform: capitalize;
     color:var(--grey);
     font-size:1rem;
-    font-weight: normal;
+    
     margin:0;
 }
 
@@ -58,7 +67,7 @@
     justify-content: flex-start;
     align-items: center;
     gap:1rem;
-    margin:1rem 1.5rem;
+    margin-bottom:2rem;
     
    
 }
@@ -123,11 +132,9 @@
     background-color: var(--red);
 }
 
-.info-container{
-    margin:1.5rem;
-}
-.info-container h3{
-    color:var(--green);
+
+.coin-current-price{
+    color:var(--grey);
     font-size: 1.2rem;
     font-weight: 600;
 }

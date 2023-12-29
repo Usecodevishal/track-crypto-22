@@ -15,7 +15,15 @@
     margin-right:auto;
 
 }
+<<<<<<< HEAD
 
 .list-container-table{
     width:100%;
 }
+=======
+@media only screen and (max-width: 600px) {
+  .list-container-table {
+    width: 100%;
+  }
+}
+>>>>>>> 4a29ccce899697a6570d9c7baa9e4dc9dd770611

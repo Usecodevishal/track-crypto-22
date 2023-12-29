@@ -43,9 +43,9 @@ function MainComponent() {
           transition={{ duration: 1, delay: 1.5 }}
         >
           <Link to="/dashboard">
-          <Button text={"Dashboard"} onClick={()=>console.log("Go To Dashboard check")} outlined={false}/>
+          <Button text={"Dashboard"} outlined={false}/>
           </Link>
-          <Button text={"share app"} onClick={()=>alert("Shared App")}outlined={true} />
+          <Button text={"share app"} outlined={true} />
         </motion.div>
       </div>
       <div className="right-part">

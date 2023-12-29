@@ -4,7 +4,11 @@ import TemporaryDrawer from "./drawer";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 import { Switch } from "@mui/material";
+<<<<<<< HEAD
 
+=======
+// import { ThemeContext } from '@emotion/react';
+>>>>>>> 4a29ccce899697a6570d9c7baa9e4dc9dd770611
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function Header() {

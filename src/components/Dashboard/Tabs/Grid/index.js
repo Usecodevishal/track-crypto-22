@@ -25,13 +25,21 @@ function Grid({ coin, delay, isWishlistPage }) {
         style={{ display: isWishlistPage && !added && "none" }}
       >
         <div className="grid-info">
+<<<<<<< HEAD
           <div className="grid-info-flex">
+=======
+         <div className="grid-info-flex">
+>>>>>>> 4a29ccce899697a6570d9c7baa9e4dc9dd770611
           <img src={coin.image} className="coin-logo" alt="" />
           <div className="name-col">
             <p className="coin-symbol">{coin.symbol}</p>
             <p className="coin-name">{coin.name}</p>
           </div>
+<<<<<<< HEAD
          </div>
+=======
+        </div>
+>>>>>>> 4a29ccce899697a6570d9c7baa9e4dc9dd770611
           <IconButton
             onClick={(e) => {
               e.preventDefault();

@@ -53,7 +53,11 @@ function App() {
     <div className="App">
       <div className="cursor" id="cursor" />
       <div className="cursor-pointer" id="cursor-pointer" />
+
       <ToastContainer />
+
+    <ToastContainer />
+
      <BrowserRouter>
        <Routes>
         <Route path="/" element={<HomePage/>}/>

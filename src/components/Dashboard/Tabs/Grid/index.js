@@ -25,21 +25,16 @@ function Grid({ coin, delay, isWishlistPage }) {
         style={{ display: isWishlistPage && !added && "none" }}
       >
         <div className="grid-info">
-<<<<<<< HEAD
           <div className="grid-info-flex">
-=======
-         <div className="grid-info-flex">
->>>>>>> 4a29ccce899697a6570d9c7baa9e4dc9dd770611
-          <img src={coin.image} className="coin-logo" alt="" />
-          <div className="name-col">
-            <p className="coin-symbol">{coin.symbol}</p>
-            <p className="coin-name">{coin.name}</p>
+            <div className="grid-info-flex">
+              <img src={coin.image} className="coin-logo" alt="" />
+              <div className="name-col">
+                <p className="coin-symbol">{coin.symbol}</p>
+                <p className="coin-name">{coin.name}</p>
+              </div>
+            </div>
           </div>
-<<<<<<< HEAD
-         </div>
-=======
-        </div>
->>>>>>> 4a29ccce899697a6570d9c7baa9e4dc9dd770611
+
           <IconButton
             onClick={(e) => {
               e.preventDefault();
@@ -86,25 +81,24 @@ function Grid({ coin, delay, isWishlistPage }) {
             </div>
           </div>
         )}
-        
-          <p
-            className="coin-current-price"
-            style={{
-              color:
-                coin.price_change_percentage_24h < 0
-                  ? "var(--red)"
-                  : "var(--green)",
-            }}
-          >
-            ${coin.current_price.toLocaleString()}
-          </p>
-          <p className="coin-volume">
-            Total-Volume :{coin.total_volume.toLocaleString()}
-          </p>
-          <p className="market-cap">
-            Market-Cap :{coin.market_cap.toLocaleString()}
-          </p>
-        
+
+        <p
+          className="coin-current-price"
+          style={{
+            color:
+              coin.price_change_percentage_24h < 0
+                ? "var(--red)"
+                : "var(--green)",
+          }}
+        >
+          ${coin.current_price.toLocaleString()}
+        </p>
+        <p className="coin-volume">
+          Total-Volume :{coin.total_volume.toLocaleString()}
+        </p>
+        <p className="market-cap">
+          Market-Cap :{coin.market_cap.toLocaleString()}
+        </p>
       </motion.div>
     </Link>
   );

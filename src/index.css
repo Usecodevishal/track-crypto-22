@@ -11,7 +11,7 @@
   --red: #f94141;
 }
 [data-theme="light"] {
-  --white: #ffffff;
+  --white: #fff;
   --black: #111;
   --grey: #888;
   --darkgrey: #1b1b1b;

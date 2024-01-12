@@ -133,8 +133,8 @@ function ComparePage() {
               multiAxis={true}
             />
           </div>
-          <CoinInfo heading={crypto1Data.name} desc={crypto1Data.desc} />
-          <CoinInfo heading={crypto2Data.name} desc={crypto2Data.desc} />
+          <CoinInfo heading={crypto1Data.name} desc={crypto1Data.desc} descInKo = {crypto1Data.descInKo}/>
+          <CoinInfo heading={crypto2Data.name} desc={crypto2Data.desc} descInKo = {crypto2Data.descInKo}/>
         </>
       )}
     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 function CoinInfo({ heading, desc, descInKo }) {
-  const [inEng, setInEng] = useState(false);
+  const [inEng, setInEng] = useState(true);
   let shortDesc;
   let longDesc;
 

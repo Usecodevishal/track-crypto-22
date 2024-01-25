@@ -57,7 +57,7 @@ useEffect(()=>{
         setIsLoading(false);
        
     }else {
-      setIsLoading(true);
+     
       
       // if(notFetch7sec === false && isLoading === true){
         
@@ -72,10 +72,13 @@ useEffect(()=>{
       //   },7000);
       // }
 
+      
       setTimeout(() => {
       if(isLoading === true){
         setNotFetch7sec(true);
         typingNotify();
+      }else {
+        return;
       }
     },10000);
      

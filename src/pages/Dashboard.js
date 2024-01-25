@@ -16,6 +16,12 @@ const [search, setSearch] = useState("");
 const [isLoading, setIsLoading] = useState(true);
 const [pageNumber, setPageNumber] = useState(1);
 const [paginatedCoins, setPaginatedCoins] = useState([]);
+const [notFetch7sec, setNotFetch7sec] = useState(false);
+const [str, setStr] = useState("The Coingeko Api is facing huge Traffic now! Please Visit in Later Time!!!");
+const [string, setString] = useState("")
+let full = false;
+let index = 1;
+    
 
 const handlePageChange = (event, value) => {
   setPageNumber(value);
@@ -44,13 +50,69 @@ useEffect(()=>{
     const myCoins = await get100Coins();
 
     if(myCoins){
+        
         setCoins(myCoins);
        
         setPaginatedCoins(myCoins.slice(0, 10));
         setIsLoading(false);
+       
+    }else {
+      setIsLoading(true);
+      
+      // if(notFetch7sec === false && isLoading === true){
+        
+      //   setTimeout(() => {
+      //     setIsLoading(false);
+      //     setNotFetch7sec(true);
+      //     //let str = "The Coingeko Api is facing huge Traffic now! Please Visit in Later Time!!!";
+         
+          
+      //     typingNotify();
+        
+      //   },7000);
+      // }
+     
     }
+
+    setTimeout(() => {
+      if(isLoading === true){
+        setNotFetch7sec(true);
+        typingNotify();
+      }
+    },10000);
    }
 
+ 
+    
+
+   function typingNotify() {
+    
+    
+     // let new_title = str.slice(0,index);
+     
+        //heading.innerText = new_title;
+      
+        setString(str.slice(0,index));
+      
+
+      if(full === false ){
+        index++;
+        if(index > str.length){
+          full = true;
+        }
+
+      }
+      if(full === true){
+        index--;
+        if(index < 1){
+          full = false;
+        }
+      }
+
+
+      setTimeout(() => typingNotify(), 100);
+    }
+  
     return (
         <>
         <div>
@@ -86,7 +148,7 @@ useEffect(()=>{
             </div>
           </div>
         ):(
-            !isLoading ?(
+            !isLoading && !notFetch7sec ?(
                 <div>
         <TabsComponents coins={search ?filterCoins: paginatedCoins}/>
         {!search && (
@@ -96,9 +158,9 @@ useEffect(()=>{
             />
           )}
           <Footer/>
-        </div>):(
+        </div>): !notFetch7sec? (
             <LoadingComponent/>
-        )
+        ): (<h1 className='apiTraffic' style={{color: "white"}}>{string}</h1>)
         
         )}
             
